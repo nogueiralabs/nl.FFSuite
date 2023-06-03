@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>nlabs Firefox Suite</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: Roboto, Arial, sans-serif;
+      padding: 20px;
+      background-color: #0E0F10;
+      color: #FFFFFF;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+      color: #FFFFFF;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h2 style="text-align: center;">nlabs Firefox Suite</h2><hr><br>
+  <label>
+    <input type="checkbox" id="saveDataCheckbox"> Add the "save-data" header
+  </label>
+  <label>
+    <input type="checkbox" id="dntCheckbox"> Add the "DNT" header
+  </label>
+  <label>
+    <input type="checkbox" id="userAgentCheckbox"> Change the user-agent to Firefox Mobile
+  </label>
+  <label>
+    <input type="checkbox" id="blockJsCheckbox"> Block JavaScript
+  </label>
+  <label>
+    <input type="checkbox" id="blockMediaCheckbox"> Block image and video downloads
+  </label>
+  <label>
+    <input type="checkbox" id="removeReferrerCheckbox"> Remove the "Referer" header
+  </label>
+  <label>
+    <input type="checkbox" id="removeCookieCheckbox"> Remove the "Cookie" header
+  </label>
+  <label>
+    <input type="checkbox" id="removeAcceptLanguageCheckbox"> Remove the "Accept-Language" header
+  </label>
+  <div class="footer">
+    <p>Visit <a href="https://nogueira.live" target="_blank">nogueira.live</a></p>
+  </div>
+</body>
+</html>
